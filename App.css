@@ -1,0 +1,211 @@
+body{
+  background-color: #00001E;
+  color: white;
+  font-family: 'Tinos';
+  font-size: 18px;
+  letter-spacing: 0.3px;
+}
+
+h1{
+  font-family: 'Fira Mono';
+}
+
+.chatBlock{
+  padding: 10px;
+  display: flex;
+  max-width: 800px;
+  height: 500px;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 0 5px white,0 0 25px white;
+  letter-spacing: 1px;
+  background-color: #1B1E2A;
+}
+
+.chatBar{
+  width: 30%;
+  border-right: 2px solid #262935;
+  padding: 10px;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  position: relative;
+}
+
+.chatBar p{
+  margin-top: 0;
+}
+
+.chatBar button{
+  background-color: inherit;
+  border:1px solid rgb(150, 150, 150);
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 35px;
+}
+
+.chatBar button:hover{
+  cursor: pointer;
+  border-color: white;
+  color: white;
+}
+
+.chatBarItem{
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background-color: #212430;
+  margin-bottom: 5px;
+}
+
+.chatBarItem:hover{
+  cursor: pointer;
+  background-color: #262935;
+}
+
+.chatBarItem p{
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.chatBarItem button{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: inherit;
+  border: 0;
+  color: rgb(199, 159, 159);
+  font-size: 10px;
+  z-index: 1;
+}
+
+.chatBarItem button:hover{
+  cursor: pointer;
+  color: #e73434;
+}
+
+.chatWindow{
+  width: 70%;
+  padding: 10px;
+}
+
+.chatWindow p{
+  margin-top: 0;
+}
+
+.sendMessageForm{
+  width: 100%;
+  background-color: #262935;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.sendMessageForm input{
+  width: 32px;
+  height: 32px;
+  border:0;
+  background-image: url(images/send.png);
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0);
+  vertical-align: sub;
+  margin-left: 20px;
+}
+
+.sendMessageForm input:hover{
+  cursor: pointer;
+}
+
+.sendMessageForm textarea{
+  width: 70%;
+  background-color: #212430;
+  margin: auto;
+  height: 40px;
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  border:0;
+  outline: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.chatMessages{
+  height: 360px;
+  margin-bottom: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.chatName{
+  text-transform: uppercase;
+  font-family: 'Fira Mono';
+}
+
+.messageBlock{
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.messageBlock p{
+  margin: 5px;
+  display: block;
+  width: 90%;
+  white-space: normal;
+  word-break: break-all
+}
+
+.messageBlock button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: inherit;
+  border: 0;
+  color: rgb(199, 159, 159);
+}
+
+.messageBlock button:hover{
+  cursor: pointer;
+  color: #e73434;
+}
+
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color:#1B1E2A
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 5px;
+  background-color:#262935;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+  background-color:#56999f;
+  }
+  
+  ::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+  }
+  
+  ::-webkit-scrollbar{
+  width: 4px;
+  }
